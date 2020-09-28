@@ -86,7 +86,7 @@ header .main-nav li {
 }
 
 header .main-nav li:last-of-type {
-  background-color: #2d2640;
+  background-color: transparent;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: .1em;
@@ -104,6 +104,18 @@ header .main-nav img {
   padding-top: 5vh;
 }
 
+header .main-nav .bg-img-container-nav {
+  position: relative;
+}
+
+header .main-nav .bg-img-container-nav .bg-img-nav {
+  background-image: url(img/bg-pattern-mobile-nav.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 35vh;
+  background-size: 100%;
+}
+
 .intro {
   background-color: #2d2640;
 }
@@ -113,45 +125,185 @@ header .main-nav img {
 }
 
 .intro div {
-  width: 85%;
-  margin: 0 auto;
-  text-align: center;
+  margin: 0;
   color: #fff;
   padding: 25% 0;
   position: relative;
-}
-
-.intro div .decor-left {
-  position: absolute;
   top: -3px;
-  left: -10%;
-  width: 60%;
-}
-
-.intro div .decor-right {
-  position: absolute;
-  width: 35%;
-  right: -8%;
+  background-image: url(img/bg-pattern-intro-left-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 60%;
+  z-index: 100;
 }
 
 .intro div h1 {
-  font-size: 2.7em;
-  margin-bottom: 6%;
+  font-size: 2.5em;
   position: relative;
-  z-index: 1;
+  width: 85%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 6%;
 }
 
 .intro div p {
   line-height: 1.5em;
+  color: #fafafa;
+  width: 85%;
+  text-align: center;
+  margin: 0 auto;
   margin-bottom: 9%;
 }
 
 .intro div button {
-  background-color: #2d2640;
+  background-color: transparent;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: .1em;
   border: 1px solid #fff;
   padding: 4% 8%;
+  display: block;
+  margin: 5% auto;
+}
+
+.bg-img-container {
+  position: relative;
+}
+
+.bg-img-container .bg-img-intro {
+  background-image: url(img/bg-pattern-intro-right-mobile.svg);
+  width: 100%;
+  height: 350px;
+  z-index: 2;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  position: absolute;
+  top: -10em;
+}
+
+.different {
+  width: 85%;
+  text-align: center;
+  margin: 0 auto;
+  margin: 30% auto;
+}
+
+.different .divider {
+  border-top: 1px solid #837d87;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.different h2 {
+  font-size: 2.5em;
+  margin: 15% 0;
+}
+
+.different section {
+  margin: 6% 0;
+  display: inline-block;
+}
+
+.different h3 {
+  font-size: 1.5em;
+  margin: 6% 0;
+}
+
+.different p {
+  line-height: 1.5em;
+  color: #837d87;
+}
+
+.different img {
+  margin: 6% 0;
+}
+
+.more {
+  width: 85%;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #2d2640;
+  color: #fff;
+  padding: 20% 0;
+  background-image: url(img/bg-pattern-how-we-work-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 50%;
+}
+
+.more h2 {
+  font-size: 2.1em;
+  padding: 0 10%;
+}
+
+.more button {
+  background-color: transparent;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  border: 1px solid #fff;
+  padding: 4% 8%;
+  margin-top: 15%;
+}
+
+footer {
+  padding-bottom: 10%;
+  width: 85%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30%;
+  background-color: #fafafa;
+  width: 100%;
+  background-image: url(img/bg-pattern-footer-mobile.svg);
+  background-repeat: no-repeat;
+}
+
+footer .top-footer {
+  margin: 0 auto;
+  width: 45%;
+  padding: 20% 20% 10%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.185);
+}
+
+footer .top-footer img {
+  padding: 3%;
+}
+
+footer .top-footer div {
+  margin-top: 15%;
+}
+
+footer h4 {
+  color: #837d87;
+  letter-spacing: .1em;
+  margin: 7%;
+}
+
+footer .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.95em;
+}
+
+footer .footer-links a {
+  margin: 2.5%;
+  color: #2d2640;
+  font-size: .9em;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
 }
 /*# sourceMappingURL=styles.css.map */

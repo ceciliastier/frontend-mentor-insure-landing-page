@@ -22,7 +22,9 @@
           <li class="item"><a href="#">Account</a></li>
           <li class="item"><a href="#">View plans</a></li>
         </ul>
-        <img class="decor-nav" src="img/bg-pattern-mobile-nav.svg" alt="">
+        <div class="bg-img-container-nav">
+          <div class="bg-img-nav"></div>
+        </div>
     </nav>
   </header>
   
@@ -36,12 +38,13 @@
         and technology to help you find the plan that’s right for you. Ensure you 
         and your loved ones are protected.</p>
         <button>View plans</button>
-        <img class="decor-left" src="img/bg-pattern-intro-left-mobile.svg" alt="">
-        <img class="decor-right" src="img/bg-pattern-intro-right-mobile.svg" alt="">
       </div>
     </section>
-
-    <section>
+    <div class="bg-img-container">
+      <div class="bg-img-intro"></div>
+    </div>
+    <section class="different">
+      <div class="divider"></div>
       <h2>We’re different</h2>
 
       <section>
@@ -67,7 +70,7 @@
 
     </section>
 
-    <section>
+    <section class="more">
       <h2>Find out more about how we work</h2>
       <button>How we work</button>
     </section>
@@ -78,7 +81,7 @@
 
     <nav>
 
-      <div>
+      <div class="top-footer">
         <img src="img/logo.svg" alt="logo">
         <div>
           <a href="#"><img src="img/icon-facebook.svg" alt="facebook icon"></a>
@@ -88,7 +91,7 @@
         </div>
       </div>
       
-      <div>
+      <div class="footer-links">
         <h4>Our company</h4>
         <a href="#">How we work</a>
         <a href="#">Why Insure?</a>
@@ -96,7 +99,7 @@
         <a href="#">Reviews</a>
       </div>
 
-      <div>
+      <div class="footer-links">
         <h4>Help me</h4>
         <a href="#">FAQ</a>
         <a href="#">Terms of use</a>
@@ -104,14 +107,14 @@
         <a href="#">Cookies</a>
       </div>
 
-      <div>
+      <div class="footer-links">
         <h4>Contact</h4>
         <a href="#">Sales</a>
         <a href="#">Support</a>
         <a href="#">Live chat</a>
       </div>
 
-      <div>
+      <div class="footer-links">
         <h4>Others</h4>
         <a href="#">Careers</a>
         <a href="#">Press</a>
@@ -127,6 +130,7 @@
   </div>
   <!-- JQUERY -->
   <script>
+    // opens and closes mobile nav and changed the icon from hamburger to X
     $(document).ready(function(){
       $("#menuBtn").click(function(){
         $("#navigation").slideToggle("slow");
@@ -134,23 +138,5 @@
   });
 });
   </script>
-  <!-- JAVASCRIPT -->
-  <!-- <script>
-
-    const menuBtn = document.querySelector('#menuBtn');
-    const nav = document.querySelector('#navigation');
-
-    menuBtn.onclick = function(){
-      if(nav.classList.contains('closed')){
-        nav.classList.remove('closed');
-        nav.classList.add('open');
-      }else if(nav.classList.contains('open')){
-        nav.classList.remove('open');
-        nav.classList.add('closed');
-      }
-    }
-    
-
-  </script> -->
 </body>
 </html>
